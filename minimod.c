@@ -49,8 +49,8 @@ static void guess_stack_trace(void)
 				(vma->vm_start <= data) &&
 				(data <= vma->vm_end))
 			is_exec = 1;
-		if (is_exec)
-			printk("0x%016lx 0x%016lx %d\n", addr, data, is_exec);
+		//if (is_exec)
+		printk("0x%016lx 0x%016lx %d\n", addr, data, is_exec);
 	}
 }
 
